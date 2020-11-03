@@ -1,0 +1,299 @@
+/*
+    Theme Name: Facebook Login Page Clone
+    Author: Samiul Hasan
+    Support: samdevx07@gmail.com
+    Description: Creative Web Solution
+    Version: 5.0 Beta
+*/
+/* Included All CSS 
+--------------------------
+    1. Theme Main css
+    2. Header Section
+    3. slider
+    4. about-area
+    5. features-box
+    6. department
+    7. team
+    8. video-area
+    9. counter
+    10. footer 
+*/
+@font-face {
+  font-family: Helvetica;
+  src: url(/fonts/Helvetica/Helvetica.ttf);
+  font-weight: bold;
+}
+
+body {
+  background: #F0F2F5;
+}
+
+.body-section {
+  margin: 100px 0;
+}
+
+.body-section .left-sec .fb-logo {
+  width: 200px;
+  padding: 0;
+  margin-left: -22px;
+  margin-top: -22px;
+}
+
+.body-section .left-sec h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 27px;
+}
+
+.body-section .left-sec p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -3px;
+  color: #535353;
+}
+
+.body-section .left-sec .user-acc {
+  width: 160px;
+  display: inline-block;
+  margin: 10px 0;
+  margin-right: 16px;
+}
+
+.body-section .left-sec .user-acc .card {
+  border-radius: 12px;
+  position: relative;
+  transition: .3s;
+}
+
+.body-section .left-sec .user-acc .card .card-img {
+  overflow: hidden;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+
+.body-section .left-sec .user-acc .card .card-img img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.body-section .left-sec .user-acc .card .card-img::before {
+  position: absolute;
+  content: '\2716';
+  font-family: '';
+  top: 3px;
+  left: 3px;
+  font-size: 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.719);
+  padding: 4px 8px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.body-section .left-sec .user-acc .card .card-img:hover::before {
+  top: 0;
+  left: 0;
+  background: #fff;
+  color: #000;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  cursor: pointer;
+}
+
+.body-section .left-sec .user-acc .card .card-img::after {
+  position: absolute;
+  content: '1';
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  margin-right: -5px;
+  margin-top: -5px;
+  color: #fff;
+  font-weight: bold;
+  background: #fd2b2b;
+  padding: 4px 11px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.body-section .left-sec .user-acc .card .card-title {
+  cursor: pointer;
+  margin: 0;
+}
+
+.body-section .left-sec .user-acc .card .card-title h5 {
+  margin: 0;
+  padding: 11px 0;
+  color: #535353;
+  font-weight: 600;
+}
+
+.body-section .left-sec .user-acc .card:hover {
+  box-shadow: 0px 0px 46px -13px rgba(0, 0, 0, 0.45);
+}
+
+.body-section .left-sec .user-acc:last-child {
+  margin-right: 0;
+}
+
+.body-section .left-sec .add-acc {
+  width: 160px;
+  display: inline-block;
+  margin: 10px 0;
+  margin-right: 16px;
+}
+
+.body-section .left-sec .add-acc .card {
+  transition: .3s;
+  cursor: pointer;
+}
+
+.body-section .left-sec .add-acc .card .add-btn {
+  height: 160px;
+  background: #F5F6F7;
+}
+
+.body-section .left-sec .add-acc .card .add-btn .fa {
+  font-size: 25px;
+  background: #1877F2;
+  padding: 10px 12px;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.body-section .left-sec .add-acc .card .card-title {
+  cursor: pointer;
+  margin: 0;
+}
+
+.body-section .left-sec .add-acc .card .card-title h5 {
+  margin: 0;
+  padding: 11px 0;
+  color: #535353;
+  font-weight: 600;
+}
+
+.body-section .left-sec .add-acc .card:hover {
+  box-shadow: 0px 0px 46px -13px rgba(0, 0, 0, 0.45);
+}
+
+.body-section .right-sec .right-sec-inner {
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 46px -20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.body-section .right-sec .log-in-form .mail {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid silver;
+  outline-color: #73b0ff;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.body-section .right-sec .log-in-form .password {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid silver;
+  outline-color: #73b0ff;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.body-section .right-sec .log-in-form .btn {
+  width: 100%;
+  padding: 14px 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+
+.body-section .right-sec .log-in-form .forgot {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.body-section .right-sec .log-in-form .cr-acc {
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.cr-page p {
+  cursor: text;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cr-page p span {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cr-page p span:hover {
+  text-decoration: underline;
+}
+
+.footer-area {
+  background: #fff;
+  padding: 33px 0;
+}
+
+.footer-area .language ul {
+  list-style: none;
+}
+
+.footer-area .language ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.footer-area .language ul li a {
+  font-size: 14px;
+  color: #585858;
+}
+
+.footer-area .language ul li button {
+  font-size: 10px;
+  border: 1px solid #585858;
+  padding: 3px 13px;
+  cursor: pointer;
+  color: #585858;
+  outline: none;
+}
+
+.footer-area .others ul {
+  list-style: none;
+}
+
+.footer-area .others ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.footer-area .others ul li a {
+  font-size: 14px;
+  color: #585858;
+}
+
+.footer-area .copyright {
+  color: #585858;
+  font-size: 14px;
+  margin-bottom: 0;
+}
